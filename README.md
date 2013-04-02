@@ -2,7 +2,7 @@ Collectd-iostat
 ====
 Collectd-iostat is an iostat plugin for collectd that allows you to graph Linux iostat metrics in graphite or other output formats that are supported by collectd.
 
-![Example browser](https://github.com/keirans/collectd-iostat/samples/images/graphite_screenshot.jpg)
+![Example browser](https://github.com/keirans/collectd-iostat/blob/master/samples/images/graphite_screenshot.jpg)
 
 How ?
 -------
