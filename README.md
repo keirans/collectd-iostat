@@ -6,13 +6,14 @@ Collectd-iostat is an iostat plugin for collectd that allows you to graph Linux 
 
 How ?
 -------
-Written in simple Ruby, Collectd-iostat functions by calling iostat infinately each second and reformatting each block device line it into a layout suitable for the collectd Exec plugin.
+Written in simple Ruby, Collectd-iostat functions by calling iostat infinately each second and reformatting each block device line into a layout suitable for the collectd Exec plugin.
 
 Collectd can be then configured to write the collected data into many output formats that are supported by it's write plugins, such as graphite, which was the primary use case for this plugin.
 
 Why ?
 -------
 This was written to assist in debugging an issue where block device throughput and utilisation was being blamed for poor application performance, which this plugin showed this was not the case. 
+
 Although collectd provides disk statistics out of the box, graphing the metrics as shown by iostat was found to be more useful for this particular issue as the metrics graphed matched those seen by the end users in their userland tools with minimal conversion of values, and it also was more granular in functionality, in that metrics are provided on block devices, partitions, multipath devices and LVM volumes.
 
 In addition to this, it was also used as a chance to learn a bit of ruby.
